@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 unsigned int hash(char *key) {
   char *p = key;
