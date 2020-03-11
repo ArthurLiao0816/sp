@@ -38,9 +38,10 @@ int nextTemp() {
 void genOp1(int i, char c) {
   printf("# t%d=%c\n", i, c);
   // t1=3 轉成 @3; D=A; @t1; M=D
-  // t1=x 轉成 @x; D=M; @t1; M=D
+  /* t1=x 轉成 @x; D=M; @t1; M=D
+     @x的意思是:有一個記憶體位置儲存了x這個值，此時A為x存放的位置，M為x。*/
   printf("@%c\n", c);
-  char AM = (isdigit(c)) ? 'A':'M';
+  char AM = (isdigit(c)) ? 'A':'M'; //If (isdigit(c)) = true, AM = 'A'; else, AM = 'M'
   printf("D=%c\n", AM);
   printf("@t%d\n", i);
   printf("M=D\n");
