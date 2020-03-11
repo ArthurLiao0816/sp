@@ -2,14 +2,13 @@
 void F();
 
 void E() {
-  printf("E started");
-  E();
+  printf("E started\n");
   F();
-  printf("E finished");
+  printf("E finished\n");
 }
 
 void F() {
-
+  printf("F started\nF\nF finished\n");
 }
 
 int main() {
