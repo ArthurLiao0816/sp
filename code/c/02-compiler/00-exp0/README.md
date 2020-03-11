@@ -16,6 +16,7 @@ t2=8
 t3=t1-t2
 t4=t0+t3
 ```
+以static形式宣告的變數只會在程式剛執行時初始化，若此宣告是在函式中進行，則當此函式被呼叫時，static... 將不會再run一次
 
 
 ## exp0hack -- 編譯後產生 hack CPU 的組合語言 (nand2tetris)
